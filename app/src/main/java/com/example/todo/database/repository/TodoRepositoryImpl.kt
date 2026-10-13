@@ -3,10 +3,9 @@ package com.example.todo.database.repository
 import com.example.todo.database.local.TodoDao
 import com.example.todo.database.local.TodoEntity
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
 
-class TodoRepositoryImpl(
-    private val dao: TodoDao
-) : TodoRepository {
+class TodoRepositoryImpl @Inject constructor(private val dao: TodoDao) : TodoRepository {
 
     override fun getAllTodos(): Flow<List<TodoEntity>> {
         return dao.getAllTodos()

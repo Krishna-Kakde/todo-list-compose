@@ -1,6 +1,7 @@
 package com.example.todo.database.repository
 
 import com.example.todo.database.local.TodoEntity
+import dagger.Provides
 import kotlinx.coroutines.flow.Flow
 
 interface TodoRepository {
