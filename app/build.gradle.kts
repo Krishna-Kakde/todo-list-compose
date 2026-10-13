@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId = "com.example.todo"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -46,7 +46,7 @@ dependencies {
     //viewModel
     val lifecycle_version = "2.11.0"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle_version}")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.11.0")
 
     //room
     val room_version = "2.8.4"
